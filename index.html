@@ -1,24 +1,20 @@
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
-    <title>Fetch Example</title>  
     <style>  
-        body {  
-            font-family: Arial, sans-serif;  
+        html, body {  
+            margin: 0;       /* Remove default margin */  
+            padding: 0;      /* Remove default padding */  
+            height: 100%;    /* Make body take full height */  
+        }  
+        iframe {  
+            width: 100%;     /* Full width */  
+            height: 100%;    /* Full height */  
+            border: none;    /* Remove border */  
         }  
     </style>  
 </head>  
 <body>  
-    <div id="content"></div>  
-    <script>  
-        fetch('https://genuine-engaging-pegasus.ngrok-free.app/api')  // Adjust to your actual API endpoint  
-            .then(response => response.json())  
-            .then(data => {  
-                // Process your data here and inject it into the content div  
-                const contentDiv = document.getElementById('content');  
-                contentDiv.innerHTML = JSON.stringify(data); // Example of displaying data  
-            })  
-            .catch(error => console.error('Error fetching data:', error));  
-    </script>  
+    <iframe src="https://genuine-engaging-pegasus.ngrok-free.app"></iframe>   
 </body>  
 </html>
